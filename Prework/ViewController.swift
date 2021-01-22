@@ -19,6 +19,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.title = "Tip Calculator"
+        billAmountTextField.keyboardType = UIKeyboardType.numberPad
     }
 
     @IBAction func calculateTip(_ sender: Any) {
@@ -35,6 +37,7 @@ class ViewController: UIViewController {
         //Update Total Amount
         totalLabel.text = String(format: "$%.2f", total)
     }
+    
     
 }
 
